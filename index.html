@@ -1,77 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Better Us - New</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <nav>
-    <ul>
-      <li id="nav-dashboard" class="active">Dashboard</li>
-      <li id="nav-chat">Chat</li>
-      <li id="nav-vault">Surprise Vault</li>
-    </ul>
-  </nav>
-
-  <!-- Dashboard Section -->
-  <section id="dashboard" class="page active">
-    <h1>Mood Tracker</h1>
-    <p>Move the sliders to represent how you feel today.</p>
-    <div class="mood-sliders">
-      <div class="mood-item">
-        <label for="happy">Happy</label>
-        <input type="range" id="happy" min="0" max="10" value="5">
-      </div>
-      <div class="mood-item">
-        <label for="sad">Sad</label>
-        <input type="range" id="sad" min="0" max="10" value="5">
-      </div>
-      <div class="mood-item">
-        <label for="angry">Angry</label>
-        <input type="range" id="angry" min="0" max="10" value="5">
-      </div>
-      <div class="mood-item">
-        <label for="calm">Calm</label>
-        <input type="range" id="calm" min="0" max="10" value="5">
-      </div>
-      <div class="mood-item">
-        <label for="anxious">Anxious</label>
-        <input type="range" id="anxious" min="0" max="10" value="5">
-      </div>
-      <div class="mood-item">
-        <label for="disconnected">Disconnected</label>
-        <input type="range" id="disconnected" min="0" max="10" value="5">
-      </div>
-      <div class="mood-item">
-        <label for="wornout">Worn-Out</label>
-        <input type="range" id="wornout" min="0" max="10" value="5">
-      </div>
-    </div>
-    <button id="saveMood">Save Mood</button>
-    <p id="coachMessage" class="coach-message"></p>
-  </section>
-
-  <!-- Chat Section -->
-  <section id="chat" class="page">
-    <h1>Private Chat</h1>
-    <div id="chatContainer" class="chat-container"></div>
-    <div class="chat-input">
-      <input type="text" id="chatInput" placeholder="Type your message...">
-      <button id="sendMsg">Send</button>
-      <button id="clearChat">Clear Chat</button>
-    </div>
-  </section>
-
-  <!-- Vault Section -->
-  <section id="vault" class="page">
-    <h1>Surprise Vault</h1>
-    <p>Need some ideas to reconnect? Click below for a surprise activity.</p>
-    <button id="surpriseBtn">Get a Surprise</button>
-    <p id="surpriseOutput" class="surprise-output"></p>
-  </section>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Us</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
